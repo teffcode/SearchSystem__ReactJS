@@ -54,6 +54,8 @@ class App extends Component {
               <div>
                   <CoursesCard
                       title={serie.course.name}
+                      provider={serie.course.provider.name}
+                      description={serie.course.deliveryMethod.description}
                   />
               </div>
           );

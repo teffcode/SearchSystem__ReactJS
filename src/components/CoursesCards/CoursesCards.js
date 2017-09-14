@@ -3,13 +3,19 @@ import React from 'react';
 
 import './CoursesCards.css';
 
-const CoursesCard = ({title}) => {
+const CoursesCard = ({title, provider, description}) => {
 
     return (
         <div className="card">
             <div>
                 <p>
-                    this is: {title}
+                    {title}
+                </p>
+                <p>
+                    {provider}
+                </p>
+                <p>
+                    {description}
                 </p>
             </div>
         </div>
